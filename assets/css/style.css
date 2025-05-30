@@ -101,6 +101,7 @@ header .container .right ul li a:hover {
   width: 70%;
   line-height: 1.4;
   font-weight: lighter;
+  color: var(--text-grey);
 }
 #hero .container .hero-right img {
   width: 100%;
