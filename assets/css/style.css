@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.6;
+  /* transition: all .6s ease-in-out; */
+}
+
+:root {
+  --main-color: #9ad5d1;
+  --link-color: #bfd3d2;
+  --btn-color: #a1bfbd;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-grey: #eeeeee;
+  --text-grey: #989898;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+p {
+  color: var(--light-grey);
+}
+
+/* header */
+/* header */
+header {
+  background: var(--white-color);
+  height: 13vh;
+  box-shadow: 0 2.9px 9.1px #808080ac;
+  position: fixed;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header .container .left a {
+  color: var(--black-color);
+  font-size: 2.5rem;
+}
+
+header .container .left a > span {
+  color: var(--main-color);
+}
+
+header .container .right ul {
+  display: flex;
+  gap: 1.9rem;
+}
+
+header .container .right ul li {
+  text-transform: capitalize;
+}
+header .container .right ul li a {
+  color: var(--black-color);
+}
+header .container .right ul li a.active {
+  color: var(--main-color);
+}
+header .container .right ul li a:hover {
+  color: var(--main-color);
+}
+
+/* hero section */
+/* hero section */
+#hero {
+  background: var(--light-grey);
+  height: 95vh;
+}
+#hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#hero .container .hero-left h3 {
+  font-size: 4rem;
+  width: 70%;
+  line-height: 1.4;
+}
+#hero .container .hero-left p {
+  font-size: 1.2rem;
+  width: 70%;
+  line-height: 1.4;
+  font-weight: lighter;
+}
+#hero .container .hero-right img {
+  width: 100%;
+}
+
+/* welcome */
+/* welcome */
+#welcome {
+  padding: 4rem 0;
+}
+#welcome .container {
+  text-align: center;
+}
+#welcome .container i {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
+}
+#welcome .container h4 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  text-transform: uppercase;
+}
+#welcome .container p {
+  font-size: 1rem;
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* for smart phones */
+@media (max-width: 500px) {
+  /* hero section */
+  #hero {
+    background: var(--light-grey);
+    height: auto;
+  }
+  #hero .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+  }
+
+  #hero .container .hero-left h3 {
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+  }
+  #hero .container .hero-left p {
+    font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 0.6rem;
+  }
+
+  /* welcome */
+  /* welcome */
+
+  #welcome .container h4 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+  #welcome .container p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
+/* for tablets phones */
+@media (min-width: 501px) {
+  /* hero section */
+  #hero {
+    background: var(--light-grey);
+    height: auto;
+  }
+  #hero .container {
+    display: flex;
+    padding-top: 4rem;
+  }
+
+  #hero .container .hero-left h3 {
+    font-size: 2rem;
+    width: 100%;
+  }
+  #hero .container .hero-left p {
+    font-size: 1.2rem;
+    width: 100%;
+    font-weight: lighter;
+    margin-top: 0.6rem;
+  }
+  /* welcome */
+
+  #welcome .container h4 {
+    font-size: 1.72rem;
+    margin: 0.5rem 0;
+    text-transform: uppercase;
+  }
+  #welcome .container p {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
